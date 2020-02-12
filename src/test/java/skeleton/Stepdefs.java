@@ -27,11 +27,11 @@ public class Stepdefs {
 	static int numberOfProducts; 
 	@Given("Alex is on the login page")
 	public void alex_is_on_the_login_page() {
-		System.setProperty("webdriver.chrome.driver", "‪C:\Users\Training1\Downloads\Selenium\chromedriver_win32_Latest");
+		System.setProperty("webdriver.chrome.driver", "‪C:\\Users\\Training1\\Downloads\\Selenium\\chromedriver_win32_Latest");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.get("http://10.232.237.143:443/TestMeApp/login.htm");
+		driver.get("http://172.31.36.202:443/TestMeApp/fetchcat.htm");
 		
 	} 
 
